@@ -1,0 +1,14 @@
+body{
+    min-height: 100vh;
+}
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4,1fr 2f r);
+}
+.box{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;;
+}
