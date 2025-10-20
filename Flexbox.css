@@ -1,62 +1,124 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing : border-box;
-    
+    box-sizing: border-box;
 }
-img{
+
+img {
     display: block;
 }
-.nowrap{
-    white-space:nowrap;
-}
-body{
-    min-height: 100vh;
-    background-color: aliceblue;
-    background-image: url("img/bubbles (1).png"),
-                            linear-gradient(to left,steelblue,#fff);
-   background-repeat: repeat-y,no-repeat;
-    background-position: center top;
-    background-size:20%,auto ;
-   
-}
-.hero{
-    border-bottom: 2px solid black;
-    padding: 20px;
-    Display: flex;
-    Align-items: center;
-    Justify-content: flex-start;
-    gap: 30px;
-    background-color: rgb(251,210,156);
-    background-image: url('../img/map-2176x1451 (1).png');
-    background-repeat: repeat;
-   background-size:contain;
 
+.nowrap {
+    white-space: nowrap;
 }
-.h1{
-    font-size:500%;
+
+body {
+    min-height: 100vh;
+    /* page er height fixed kore */
+    background-color: aliceblue;
+    /* page er background color set kore */
+    background-image: url("img/bubbles (1).png"),
+        /* adding background image */
+        linear-gradient(to left, steelblue, #fff);
+    /* background colour kon dike kamon hobe fixed kore */
+    background-repeat: repeat-y, no-repeat;
+    /* background image kothay kothay repeat hobe seta set kore */
+    background-position: center top;
+    /* background image er position set kore */
+    background-size: 20%, auto;
+    /* background image er size set kore */
+    background: repeat-y right center url("img/bubbles (1).png"), no-repeat;
+    /* background image er repeat and position set kore */
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    /* hero section er niche border set kore */
+    padding: 20px;
+    /* hero section er vitore padding set kore */
+    display: flex;
+    /* hero section ke flexbox banay */
+    align-items: center;
+    /* hero section er vitore item guloke vertical center e align kore */
+    justify-content: flex-start;
+    /* hero section er vitore item guloke horizontal left e align kore */
+    gap: 30px;
+    /* hero section er vitore item gulor modhye gap set kore */
+    background-color: rgb(251, 210, 156);
+    /* hero section er background color set kore */
+    background-image: url('../img/map-2176x1451 (1).png');
+    /* hero section er background image set kore */
+    background-repeat: repeat;
+    /* hero section er background image kothay kothay repeat hobe seta set kore */
+    background-size: contain;
+    /* hero section er background image er size set kore */
+}
+
+.h1 {
+    font-size: 500%;
+    /* h1 er font size set kore */
     color: aliceblue;
+    /* h1 er font color set kore */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.487);
+    /* h1 er text shadow set kore */
     background-color: #00000029;
-    padding:0.25rem;
+    /* h1 er background color set kore */
+    padding: 0.25rem;
+    /* h1 er vitore padding set kore */
     border-radius: 10px;
+    /* h1 er border radius set kore */
 }
+
 .profile-pic {
     width: 35%;
+    /* profile-pic er width set kore */
 }
+
 .profile-pic img {
     width: 35%;
+    /* profile-pic er vitore image er width set kore */
     height: auto;
+    /* profile-pic er vitore image er height auto set kore */
     min-width: 100px;
+    /* profile-pic er vitore image er minimum width set kore */
     border: 5px double gray;
+    /* profile-pic er vitore image er border set kore */
     border-radius: 50%;
+    /* profile-pic er vitore image er border radius set kore */
 }
-.navbar{
+
+.navbar {
     display: flex;
+    /* navbar ke flexbox banay */
     justify-content: center;
+    /* navbar er vitore item guloke horizontal center e align kore */
     align-items: center;
+    /* navbar er vitore item guloke vertical center e align kore */
     gap: 50px;
+    /* navbar er vitore item gulor modhye gap set kore */
     background-color: rgb(200, 200, 200);
+    /* navbar er background color set kore */
     padding: 15px 0;
+    /* navbar er vitore padding set kore */
     border-bottom: 2px solid black;
+    /* navbar er niche border set kore */
+}
+
+.clip {
+    font-weight: 800;
+    /* clip class er font weight set kore */
+    font-size: 18rem;
+    /* clip class er font size set kore */
+    text-align: center;
+    /* clip class er text ke center e align kore */
+    background-image: url("img/scenic-2200x1331.png");
+    /* clip class er background image set kore */
+    background-size: 100%;
+    /* clip class er background image er size set kore */
+    text-transform: uppercase;
+    /* clip class er text ke uppercase e convert kore */
+    -webkit-background-clip: text;
+    /* clip class er background image ke text er modhye clip kore */
+    color: transparent;
+    /* clip class er text er color ke transparent kore */
 }
