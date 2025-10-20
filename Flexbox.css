@@ -29,6 +29,7 @@ body {
     /* background image er size set kore */
     background: repeat-y right center url("img/bubbles (1).png"), no-repeat;
     /* background image er repeat and position set kore */
+    background-color: rgba(0, 0, 0, 0.119);
 }
 
 .hero {
@@ -122,3 +123,7 @@ body {
     color: transparent;
     /* clip class er text er color ke transparent kore */
 }
+/* background-attachment: scroll;
+/* কনটেন্টের সাথে স্ক্রল হবে (ডিফল্ট) */
+background-attachment: fixed;
+/* স্ক্রল করলেও ছবি স্থির থাকবে */ */
