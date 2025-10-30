@@ -1,54 +1,48 @@
-.containar{
- font-size: 2rem;
- background-color: #c3c3c3;
- color: white;
-  height: 150px;
-   max-width: 800px;
-   border:2px solid black;
-   display: flex;
-  flex-wrap: wrap;
- justify-content:space-evenly;
-  
+body{
+    font-family: arial;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.offer{
+    font-size:15px;
+    color: rgba(161, 161, 9, 0.869);
+    font-weight: bold;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.service{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+height: auto;
+    margin: 20px;
+    gap: 40px;
 }
 
 .one{
+    width:33%;
+    
+    text-align: center;
+    height: 40%;
+    padding: 1px;
+    
+}
+.img1,.img2,.img3{
    
-    background-color: hwb(0 33% 6%);
-    padding: 10px;
-  flex-grow: 2;
+    margin-bottom: 20px;
+    font-size:40px
 }
-.two{
-    padding: 10px;
-  
-    background-color: #75c875;
-    
-}
-.three{
-    
-    background-color: #b069ce;
-    padding: 10px;
-}
-.four{
-    padding: 10px;
-   
-    background-color: #d97cc5;
-}
-.five {
-    padding: 10px;
-
-    background-color:chocolate;
-}
-.six {
-    padding: 10px;
-    
-    background-color:aqua;
-}
-.seven {
-    padding: 10px;
-    margin: 4px;
-    background-color:#75c875;
-}
-.eight {
-    padding: 10px;
-    background-color:brown;
+.design2,.design1,.design3{
+    font-size:20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
