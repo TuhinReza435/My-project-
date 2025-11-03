@@ -1,48 +1,112 @@
-body{
-    font-family: arial;
-    margin: 0;
-    border: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.offer{
-    font-size:15px;
-    color: rgba(161, 161, 9, 0.869);
-    font-weight: bold;
-    text-align: center;
-    margin-top:20px;
-    margin-bottom: 10px;
+a{
+    text-decoration: none;
 }
-.service{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 100px;
+header{
+    display: flex; 
+    justify-content: space-between;
+    border-bottom:1px solid gray ;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: #abcdef;
 }
-.main{
+nav{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-content: space-around;
-height: auto;
-    margin: 20px;
-    gap: 40px;
+    gap: 20px;
+   
+    
+}
+.search-container input{
+  padding: 5px 8px;
+  border:2px solid black;
+  border-radius: 10px;
+  
+}
+.head-right{
+  display: flex;
+  gap: 20px;
+
+}
+.head-right a{
+    display: flex;
+    gap: 10px;
+}
+.search-container button {
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.head-left{
+    
+    display: flex;
+    gap:50px;
+    align-items: center;
 }
 
-.one{
-    width:33%;
-    
-    text-align: center;
-    height: 40%;
-    padding: 1px;
+.topics-list{
+ 
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px 10px;
     
 }
-.img1,.img2,.img3{
+.topics-list a{
+    color: green;
+}
+.topics-list::-webkit-scrollbar {
+    width: 2px;
+    /* scrollbar width */
+}
+
+.topics-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.topics-list:-webkit-scrollbar-thumb {
+    background:green;
+    border-radius: 5px;
+}
+.topics-list::-webkit-scrollbar-thumb:hover {
+    background: green;
+
+}
+
+
+.topics-list{
+    scrollbar-width:thin;
+    scrollbar-color:green gray;
+
+}
+#main-content{
+    display: flex;
+}
+aside {
+    display: flex;
    
-    margin-bottom: 20px;
-    font-size:40px
-}
-.design2,.design1,.design3{
-    font-size:20px;
-    font-weight: bolder;
-    margin-bottom: 20px;
+    width: 250px;
+    height: 87vh;
+    overflow: auto;
+    background-color:#abcdef;
+    flex-direction: column;
+    color: rgb(42, 144, 145);
+    flex-wrap: nowrap;
+    font-size: 20px;
+    justify-content: center;
+    gap: 2px;
 }
