@@ -164,5 +164,17 @@ aside {
     overflow-y: auto;
     background-color: #fff;
     border-right: 1px solid #ccc;
+    text-align: center;
     
+}
+span{
+    background-color: #1ac748;
+    width: 300px;
+   
+}
+h2{
+    background-color:aquamarine;
+    border-radius: 10px;
+    text-align: center;
+   
 }
