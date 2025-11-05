@@ -1,12 +1,8 @@
-let person = {
-  name: 'John',
-  age: 25,
-};
-
-function increaseAge(obj) {
-  obj.age += 1;
-}
-
-increaseAge(person);
-
-console.log(person);
+// for(let i=0;i<5;i++){
+//   console.log(i);
+// }
+// console.log(i);
+var counter=10;
+console.log(counter);
+counterr=23;
+console.log(counterr);

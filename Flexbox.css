@@ -17,9 +17,7 @@ header{
 }
 nav{
     display: flex;
-    gap: 20px;
-   
-    
+    gap: 20px;  
 }
 .search-container input{
   padding: 5px 8px;
@@ -40,11 +38,13 @@ nav{
     padding: 5px 8px;
     border-radius: 10px;
     background-color: #4CAF50;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+.main-content{
+    display: flex;
 }
 .head-left{
     
@@ -54,7 +54,6 @@ nav{
 }
 
 .topics-list{
- 
     width: 100vw;
     overflow: auto;
     display: flex;
@@ -86,8 +85,6 @@ nav{
     background: green;
 
 }
-
-
 .topics-list{
     scrollbar-width:thin;
     scrollbar-color:green gray;
@@ -96,17 +93,76 @@ nav{
 #main-content{
     display: flex;
 }
-aside {
+
+
+.sidebar {
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.main-element {
     display: flex;
-   
-    width: 250px;
-    height: 87vh;
-    overflow: auto;
-    background-color:#abcdef;
-    flex-direction: column;
-    color: rgb(42, 144, 145);
-    flex-wrap: nowrap;
-    font-size: 20px;
-    justify-content: center;
-    gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1ac748;
+    color: white;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #eee;
+}
+
+.sub-item {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sub-link {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sub-link:hover {
+    background-color: #f5f5f5;
+}
+
+.toggle-input:checked+.main-element+.sub-menu {
+    max-height: 500px;
+}
+
+.toggle-input:checked+.main-element .arrow-icon {
+    transform: rotate(180deg);
+}
+aside {
+    position: fixed;
+    top: 100px;
+    width: 300px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    
 }
